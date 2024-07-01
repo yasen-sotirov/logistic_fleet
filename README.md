@@ -1,51 +1,51 @@
-Group 4 OOP Logistic App
+## Logistic Fleet App
 Team: T. Kamenov, G. Dodekov, Y. Sotirov
 
-## 1. Description
+### 1. Description
 Design and implementation of a logistic console application.
 The application is intended to be used by an Australian pharmaceutical company to expand their freight transport operations.
 The application is planned to be used across all company branch locations.
 
-## 2. Objectives
+### 2. Objectives
 The main objectives of the software are:
 
  - Employee registration
  - Shipment registration
  - Creation of routes between company branches
  - Monitoring of the database
-## 3. Skeleton
+### 3. Skeleton
 Creating the structure and basic logic of the application:
 
  - Engine
  - Main
  - Command Factory
  - Application Data
-## 4. Class Users
+### 4. Class Users
 Instances of this class will be used for creating and logging in employees into the system.
 User type can be one of **"Manager"**, **"Employee"** or **"Supervisor"**.
 
-## 5. Class Customer
+### 5. Class Customer
 The class parameters accept information about the customer who will send a shipment.
 
  - First name
  - Last name
  - Email
  - Phone number
-## 6. Class Command Factory
+### 6. Class Command Factory
 Contains all the necessary commands for the functionality of the specific application.
 
-## 7. Class Package
+### 7. Class Package
 Accepts shipment information:
 
 Starting and ending delivery points, weight, and identification number.
-## 8. Class Delivery Route
+### 8. Class Delivery Route
 Creates a route for the shipment to move along and provides delivery time.
 
-## 9. General Program Guidelines
+### 9. General Program Guidelines
 The program has two essential commands without which its functioning would be incorrect:
 login - a command used to validate access to the system for every employee in the company;
 SetCurrentDateTime - if the command is entered without parameters, it takes the current time as default. Additionally, this command can set a future date and time. This allows simulating a real working process that would otherwise take months.
-## 10. Supported Commands:
+### 10. Supported Commands:
  - Date & Time
 
    * SetCurrentDateTime - sets the time with which the application operates has two parameters **"DD/MM/YY"** **"HH:MM:SS"** Example:
