@@ -1,0 +1,80 @@
+10/08/2023 13:00
+
+CreateDeliveryPackage SYDNEY MELBOURNE 1000 Ivan Ivanov ivan@abv.bg 0888111222
+CreateDeliveryPackage DARWIN MELBOURNE 1000 Peter Petrov petar@abv.bg 0888222333
+CreateDeliveryPackage MELBOURNE DARWIN 1000 Steven Jones steven@gmail.com 0888333444
+ViewPackages sYdneY
+ViewPackages mElBOURNe
+ViewPackages ADELAIDe
+ViewPackages ALICE_SPRINGS
+ViewPackages BRISBANE
+ViewPackages DARWIN
+ViewPackages PERTH
+ViewCustomerByPhoneNumber 0888111222 2001
+ViewCustomerByPhoneNumber 0888222333 2002
+ViewCustomerByPhoneNumber 0888333444 2003
+ViewAllCustomers
+ViewUnassignedPackages
+CreateDeliveryRoute 20/08/2023 17:30 sydNey AliCE_SPRiNGS
+CreateDeliveryRoute 20/08/2023 17:30 sydNey mELBOURNe
+CreateDeliveryRoute 20/08/2023 17:30 BRISBANE mELBOURNe
+CreateDeliveryRoute 20/08/2023 17:30 PERTh BRISBANE
+CreateDeliveryRoute 20/08/2023 17:30 DarWIN PERTh
+CreateDeliveryRoute 20/08/2023 15:00 ADELAIDe DarWIN
+CreateDeliveryRoute 20/08/2023 10:00 AliCE_SPRiNGS PERTh
+CreateDeliveryRoute 20/08/2023 10:00 PERTh BRISBANE
+CreateDeliveryRoute 20/08/2023 10:00 BRISBANE AliCE_SPRiNGS
+ViewRoutes
+SearchRoute sydNey
+AssignTruckToDeliveryRoute sydNey 3001
+SetCurrentDateTime 25/08/2023 13:00
+SetCurrentDateTime 21/08/2023 03:00
+AddDaysToNow 2
+CheckCurrentDateTime
+end
+
+
+    === КОМАНДИ С КАМИОНИ ===
+EnrollTruckToLocation Actors SYDNEY
+EnrollTruckToLocation Man SYDNEY
+EnrollTruckToLocation Man SYDNEY
+EnrollTruckToLocation Man SYDNEY
+EnrollTruckToLocation Scania SYDNEY
+EnrollTruckToLocation Scania SYDNEY
+EnrollTruckToLocation Scania SYDNEY
+EnrollTruckToLocation ACTORS ADELAIDE
+EnrollTruckToLocation Man ADELAIDE
+EnrollTruckToLocation Scania ALICE_SPRINGS
+EnrollTruckToLocation Scania ALICE_SPRINGS
+EnrollTruckToLocation MAN BRISBANE
+EnrollTruckToLocation Actors BRISBANE
+EnrollTruckToLocation MAN MELBOURNE
+EnrollTruckToLocation Scania MELBOURNE
+EnrollTruckToLocation Man PERTH
+EnrollTruckToLocation Scania PERTH
+EnrollTruckToLocation Actors PERTH
+EnrollTruckToLocation ACTORS DARWIN
+EnrollTruckToLocation Man DARWIN
+EnrollTruckToLocation Actors DARWIN
+EnrollTruckToLocation Man DARWIN
+EnrollTruckToLocation Scania SYDNEY
+EnrollTruckToLocation Scania DARWIN
+ViewAllTrucks
+ViewTrucksAtLocation MELBOURNE
+ViewTrucksAtLocation AliCE_SPRiNGS
+ViewUnenrollTrucks
+LoadPackagesToTruck SYDNEY 1026
+LoadPackagesToTruck DARWIN 1030
+end
+
+login
+username: User_1
+password: 12345
+viewusers
+logout
+username: User_1
+end
+
+ "User_1": ["Petar Ivanov", "12345", "Manager"],
+        "User_2": ["Ivan Petrov", "6789", "Employee"],
+        "User_3": ["Georgi Todorov", "3654", "Supervisor"]
